@@ -1,0 +1,38 @@
+#c, #v{
+    display: none;
+}
+.ascii-output{
+    font-family: Courier New,Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace;
+    text-align: center;
+}
+@media screen and (max-width: 767px){
+    .ascii-output{
+        font-size: 1.5vw
+    }
+}
+@media screen and (min-width: 768px){
+    .ascii-output{
+        font-size: 1.2vw
+    }
+}
+@media screen and (min-width: 960px){
+    .ascii-output{
+        font-size: 1.1vw
+    }
+}
+@media screen and (min-width: 1200px){
+    .ascii-output{
+        text-align: initial;
+        font-size: 1vw
+    }
+}
+@media screen and (min-width: 1350px){
+    .ascii-output{
+        font-size: 15px
+    }
+}
+@media screen and (min-width: 1600px){
+    .ascii-output{
+        font-size: 16px
+    }
+}

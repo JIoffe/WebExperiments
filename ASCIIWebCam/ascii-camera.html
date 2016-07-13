@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII Web Cam</title>
+    <link rel="stylesheet" href="./css/grid.css"/>
+    <link rel="stylesheet" href="./css/media-common.css"/>
+    <link rel="stylesheet" href="./css/ascii-cam.css"/>
+
+    <script type="text/javascript" src="./js/animationFrame.js"></script>
+    <script type="text/javascript" src="./js/ascii-main.js"></script>
+    <script type="text/javascript" src="./js/ascii-events.js"></script>
+</head>
+    <body>
+        <header>
+            <h1>ASCII Web Cam</h1>
+        </header>
+        <main class="media-container">
+            <div class="row">
+                <div class="col col-small-full col-lg-auto">
+                    <div class="ascii-output">
+                        <pre></pre>
+                    </div>
+                </div>
+                <div class="col col-small-full col-lg-auto">
+                    <figure class="media-controls">
+                        <figcaption>Options</figcaption>
+                        <fieldset>
+                            <legend>Brightness Ramp</legend>
+                            <label class="media-control-block">
+                                Characters: <input type="text" id="tb-ramp" value=" .:-=+*#%@"/>
+                            </label>
+                            <button id="btn-apply-ramp">Apply Change</button>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Appearance</legend>
+                            <label class="media-control-block">
+                                Font Color: <input type="color" id="color-fg" value="#FEFEFE"/>
+                            </label>
+                            <label class="media-control-block">
+                                BG Color: <input type="color" id="color-bg" value="#000000"/>
+                            </label>
+                        </fieldset>
+                        <div>
+                            <button id="btn-pause" class="media-control-block">Pause Camera Feed</button>
+                            <button id="btn-play" class="media-control-block">Restart Camera Feed</button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>Created by Jason Ioffe. Offered under the GNU General Public License 3.0</h2>
+        </footer>
+
+        <canvas id="c"></canvas>
+        <video id="v" autoplay></video>
+    </body>
+</html>
